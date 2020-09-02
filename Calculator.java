@@ -16,6 +16,8 @@ public class Calculator {
 			System.out.println(" Enter 2 For Subtraction.");
 			System.out.println(" Enter 3 For Multiplication.");
 			System.out.println(" Enter 4 For Divison.");
+			System.out.println(" Enter 5 For Square Root Of A Number .");
+			
 			System.out.print(" Please Choose  The Opeartion:-");
 			int ans=0;
 			int chooseoperation=s.nextInt();
@@ -66,6 +68,18 @@ public class Calculator {
 				System.out.println(" Division Of The Numbers Is:"+ans);
 				System.out.println();
 				break;
+				
+				
+			case 5:
+				
+				System.out.print(" Enter The  Number To Find The Square Root:-");
+				  double inputnum=s.nextInt();
+				  SquareRoot<Double>obj=new SquareRoot<>(inputnum);
+				  double ansn=obj.findSquareRoot(inputnum);
+				  System.out.println(" Square Root Of The Number Is:"+ansn);
+				  System.out.println();
+					break;
+				 
 				default:
 					System.out.println(" *** Please Enter Valid Operation ***");
 				}
